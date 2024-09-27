@@ -47,3 +47,4 @@ let swiper = new Swiper(".slider-wrapper", {
     },
   },
 });
+

@@ -651,3 +651,93 @@ header .navbar {
     gap: 20px;
   }
 }
+
+/* Estilo para expandir la imagen al hacer clic */
+.image-gallery img {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.image-gallery img.expanded {
+  transform: scale(3  ,3);
+  z-index: 10;
+}
+
+/* Estilo para las cards */
+.projects-section {
+  padding: 60px 0;
+  background-color: var(--background-color-light);
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  list-style: none;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-content .text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.zoom-container {
+  position: relative;
+}
+
+.zoom-container img {
+  transition: transform 0.3s ease;
+}
+
+.zoom-container.zoom-active img {
+  transform: scale(1.5);
+}
+
+.zoom-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.zoom-icon:hover {
+  transform: scale(1.1);
+}
