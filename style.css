@@ -104,7 +104,7 @@ header .navbar {
 }
 
 .navbar .nav-logo .logo-text {
-  color: var(--white-color);
+  color: #fff;
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
 }
@@ -116,7 +116,7 @@ header .navbar {
 
 .navbar .nav-menu .nav-link {
   padding: 10px 18px;
-  color: var(--white-color);
+  color: #fff;
   font-size: var(--font-size-m);
   border-radius: var(--border-radius-m);
   transition: 0.3s ease;
@@ -134,7 +134,7 @@ header .navbar {
 /* Hero section styling */
 .hero-section {
   min-height: 100vh;
-  background: #EAEAEA;
+  background: #000;
 }
 
 .hero-section .section-content {
