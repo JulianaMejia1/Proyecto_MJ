@@ -697,7 +697,7 @@ header .navbar {
 }
 
 .text {
-  font-size: var(--font-size-s); /* Ajusta el tamaño de la fuente del texto */
+  font-size: var(--font-size-s); 
 }
 
 
