@@ -1,5 +1,4 @@
-from flask import Flask, request, render_template, redirect, url_for
-from flask_mysqldb import MySQL
+from flask import Flask, render_template
 app = Flask(__name__)
 
 # Lista para almacenar todas las transacciones
