@@ -91,7 +91,7 @@ header {
   z-index: 5;
   width: 100%;
   position: fixed;
-  background: #3A69A8;
+  background: #000;
 }
 
 header .navbar {
