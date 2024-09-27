@@ -91,7 +91,7 @@ header {
   z-index: 5;
   width: 100%;
   position: fixed;
-  background: var(--primary-color);
+  background: #3A69A8;
 }
 
 header .navbar {
@@ -134,7 +134,7 @@ header .navbar {
 /* Hero section styling */
 .hero-section {
   min-height: 100vh;
-  background: var(--primary-color);
+  background: #EAEAEA;
 }
 
 .hero-section .section-content {
