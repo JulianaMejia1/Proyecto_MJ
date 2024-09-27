@@ -64,7 +64,7 @@
       <section class="about-section" id="about">
         <div class="section-content">
           <div class="about-image-wrapper">
-            <img src="img/about.png" alt="About" class="about-image" />
+            <img src="{{ url_for('static', filename='img/about.png') }}" alt="About" class="about-image">
           </div>
           <div class="about-details">
             <h2 class="section-title">Sobre nosotros</h2>
@@ -85,11 +85,11 @@
         <h3 class="name">Proyecto administrativo (SENA)</h3>
         <div class="card-image image-gallery">
           <div class="zoom-container">
-            <img src="img/sena1.png" alt="Proyecto administrativo (SENA) - Image 1" class="menu-image zoom-img" />
+            <img src="{{ url_for('static', filename='img/sena1.png') }} "alt="Proyecto administrativo (SENA) - Image 1" class="menu-image zoom-img" />
             <div class="zoom-icon" onclick="enableZoom(this)">🔍</div>
           </div>
           <div class="zoom-container">
-            <img src="img/sena2.png" alt="Proyecto administrativo (SENA) - Image 2" class="menu-image zoom-img" />
+            <img src="{{ url_for('static', filename='img/sena2.png') }}" alt="Proyecto administrativo (SENA) - Image 2" class="menu-image zoom-img" />
             <div class="zoom-icon" onclick="enableZoom(this)">🔍</div>
           </div>
         </div>
@@ -99,15 +99,16 @@
         <h3 class="name">Times</h3>
         <div class="card-image image-gallery">
           <div class="zoom-container">
-            <img src="img/agenda1.png" alt="Project 2 - Image 1" class="menu-image zoom-img" />
+
+            <img src="{{ url_for('static', filename='img/agenda1.png' ) }}" alt="Project 2 - Image 1" class="menu-image zoom-img" />
             <div class="zoom-icon" onclick="enableZoom(this)">🔍</div>
           </div>
           <div class="zoom-container">
-            <img src="img/agenda2.png" alt="Project 2 - Image 2" class="menu-image zoom-img" />
+            <img src="{{ url_for('static', filename='img/agenda2.png' ) }}" alt="Project 2 - Image 2" class="menu-image zoom-img" />
             <div class="zoom-icon" onclick="enableZoom(this)">🔍</div>
           </div>
           <div class="zoom-container">
-            <img src="img/agenda3.png" alt="Project 2 - Image 3" class="menu-image zoom-img" />
+            <img src="{{ url_for('static', filename='img/agenda3.png') }}" alt="Project 2 - Image 3" class="menu-image zoom-img" />
             <div class="zoom-icon" onclick="enableZoom(this)">🔍</div>
           </div>
         </div>
@@ -178,12 +179,14 @@ function enableZoom(element) {
         <div class="section-content">
           <div class="container">
             <div class="Cont">
-                <img class="Insta" src="/Media/icons8-instagram-300.png" alt="" >
+              <img src="{{ url_for('static', filename='Media/image.png') }}" alt="Coffee" class="hero-image">
+
+                <img class="Insta" src="{{ url_for('static', filename='/Media/icons8-instagram-300.png')}}" alt="" >
                 <h4 class="nombre" >@CodeMakers_JM</h4>
                 <a href="https://www.instagram.com/samiialvarezlondono?igsh=MWg4d2o4OW41cjh2eA==" class="boton">Instagram</a>
             </div>
             <div class="Cont">
-                <img class="What" src="/Media/icons8-whatsapp-300.png" alt="" >
+                <img class="What" src="{{ url_for('static', filename='/Media/icons8-whatsapp-300.png')}}" alt="" >
                 <h4 class="nombre" >CodeMakers JM</h4>
                 <a href="https://www.instagram.com/juancho_u1012?igsh=OGQ5ZDc2ODk2ZA==" class="boton">Whatsapp</a>
             </div>
