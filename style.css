@@ -663,40 +663,43 @@ header .navbar {
   z-index: 10;
 }
 
-/* Estilo para las cards */
 .projects-section {
   padding: 60px 0;
-  background-color: var(--background-color-light);
+  background-color: var(--light-pink-color);
 }
 
-.projects-list {
+.projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Cambiado a 280px para reducir el tamaño */
   gap: 20px;
 }
 
-.project-item {
-  list-style: none;
-}
-
-.card {
+.project-card {
   background-color: white;
-  border-radius: 8px;
+  border-radius: var(--border-radius-m);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px; /* Espaciado interno */
+  transition: transform 0.3s; /* Transición para efecto hover */
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+.project-card:hover {
+  transform: scale(1.03); /* Efecto de ampliación al pasar el mouse */
 }
 
-.card-image img {
-  width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  object-fit: cover;
+.card-image {
+  margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
 }
+
+.name {
+  font-size: var(--font-size-l); /* Ajusta el tamaño de la fuente del nombre del proyecto */
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 5px;
+}
+
+.text {
+  font-size: var(--font-size-s); /* Ajusta el tamaño de la fuente del texto */
+}
+
 
 .card-content {
   padding: 20px;
@@ -704,14 +707,14 @@ header .navbar {
 }
 
 .card-content .name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-semibold);
+  margin: 10px 0;
 }
 
 .card-content .text {
-  font-size: 1rem;
-  color: #555;
+  font-size: var(--font-size-m);
+  color: var(--medium-gray-color);
 }
 
 .zoom-container {
