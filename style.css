@@ -741,3 +741,65 @@ header .navbar {
 .zoom-icon:hover {
   transform: scale(1.1);
 }
+
+
+
+.container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 20px; /* Espacio entre los elementos */
+  margin: 20px; /* Margen alrededor del contenedor */
+}
+
+.Cont {
+  display: flex;
+  flex-direction: column; /* Apilar elementos verticalmente */
+  align-items: center; /* Centrar los elementos dentro del contenedor */
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 20px; /* Espaciado interno */
+  width: 220px; /* Ancho un poco más grande */
+  transition: transform 0.3s; /* Efecto de transformación */
+}
+
+.Cont:hover {
+  transform: scale(1.05); /* Aumento al pasar el cursor */
+}
+
+.Cont img {
+  width: 80px; /* Ajustar tamaño de los íconos a un poco más grande */
+  height: auto; /* Mantener la proporción de las imágenes */
+}
+
+.nombre {
+  font-weight: bold; /* Texto en negrita */
+  margin: 10px 0; /* Margen entre el nombre y el botón */
+  color: #333; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+}
+
+.boton {
+  background-color: #007bff; /* Color del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 15px; /* Espaciado interno del botón */
+  border-radius: 5px; /* Bordes redondeados en el botón */
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s; /* Efecto de transición al pasar el cursor */
+}
+
+.boton:hover {
+  background-color: #0056b3; /* Color del botón al pasar el cursor */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .Cont {
+      width: 90%; /* Ancho adaptable en pantallas pequeñas */
+  }
+
+  .Cont img {
+      width: 60px; /* Tamaño de íconos más pequeño en pantallas pequeñas */
+  }
+}
