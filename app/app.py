@@ -11,7 +11,7 @@ def index():
 # Ruta para redirigir a WhatsApp
 @app.route('/whatsapp')
 def whatsapp():
-    whatsapp_url = "https://api.whatsapp.com/send?phone=573219043634&text=Hola"
+    whatsapp_url = "https://api.whatsapp.com/send?phone=573506206995&text=Hola"
     return redirect(whatsapp_url)
 
 if __name__ == '__main__':
