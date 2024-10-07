@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reseña</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='reseñas.css') }}">
+
+</head>
+<body>
+    <form class="review-form" method="post">
+        <h1>Deja tu reseña</h1>
+        <div class="form-group">
+            <label>Calificación</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+            </div>
+        </div>
+        <div class="form">
+            <label for="res_nombre">Dejanos tu nombre</label>
+            <textarea id="res_nombre" name="res_nombre" placeholder="Asi identificar tu reseña"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="res_mejor">¿Qué fue lo que más te gustó del servicio?</label>
+            <textarea id="res_mejor" name="res_mejor" placeholder="Cuéntanos tu experiencia..."></textarea>
+        </div>
+        <div class="form-group">
+            <label for="fres_utilidad">¿Para qué fue útil nuestro servicio?</label>
+            <textarea id="res_utilidad" name="res_utilidad" placeholder="Describe cómo te ayudamos..."></textarea>
+        </div>
+        <button type="submit" >Enviar reseña</button>
+    </form>
+    
+</body>
+</html>
